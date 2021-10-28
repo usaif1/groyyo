@@ -11,5 +11,6 @@ const styles = StyleSheet.create({
   description: {
     fontSize: 14,
     marginTop: 10,
+    color: 'black',
   },
 });

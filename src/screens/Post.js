@@ -1,11 +1,20 @@
 //dependencies
-import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import React, {useState} from 'react';
+import {StyleSheet, View} from 'react-native';
 
-const Post = () => {
+//imports
+import AddNewHeader from '../components/NewPost/AddNewHeader';
+import UserCard from '../components/NewPost/UserCard';
+import PostContent from '../components/NewPost/PostContent';
+
+const Post = ({navigation}) => {
+  const [post, setPost] = useState('');
+
   return (
-    <View>
-      <Text>Post Screen</Text>
+    <View style={{flex: 1, backgroundColor: '#FFFFFF'}}>
+      <AddNewHeader post={post} navigation={navigation} />
+      <UserCard />
+      <PostContent post={post} setPost={setPost} />
     </View>
   );
 };
