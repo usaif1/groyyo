@@ -38,8 +38,8 @@ const styles = StyleSheet.create({
   text: {
     marginLeft: 10,
     backgroundColor: '#EDEDED',
-    padding: 5,
-    borderRadius: 3,
+    padding: 10,
+    borderRadius: 8,
     width: '88%',
   },
   bold: {
