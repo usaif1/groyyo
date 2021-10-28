@@ -1,11 +1,21 @@
 //dependencies
 import React from 'react';
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View, ScrollView} from 'react-native';
+
+//imports
+import PostCard from '../components/Posts/PostCard';
+import {useApp} from '../context/AppProvider';
 
 const Home = () => {
+  const {posts} = useApp();
+
   return (
-    <View>
-      <Text>Home Screen</Text>
+    <View style={{flex: 1, backgroundColor: '#ffffff'}}>
+      <ScrollView>
+        {posts.map(post => {
+          return <PostCard key={post.id} post={post} />;
+        })}
+      </ScrollView>
     </View>
   );
 };
