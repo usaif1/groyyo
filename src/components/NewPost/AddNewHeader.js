@@ -16,6 +16,7 @@ const AddNewHeader = ({post, navigation}) => {
     }
 
     addPost(post);
+    navigation.goBack();
   };
 
   return (
@@ -58,5 +59,6 @@ const styles = StyleSheet.create({
   },
   smText: {
     fontSize: 18,
+    color: 'black',
   },
 });
