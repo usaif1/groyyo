@@ -19,11 +19,15 @@ const DrawerHeader = ({navigation, route, options}) => {
         <Image source={user} style={styles.userImg} />
       </TouchableOpacity>
       <View style={styles.searchContainer}>
-        <Icon name="search" size={15} />
-        <TextInput placeholder="Search" style={styles.textInput} />
+        <Icon name="search" size={15} color="#808080" />
+        <TextInput
+          placeholder="Search"
+          style={styles.textInput}
+          placeholderTextColor="#808080"
+        />
       </View>
       <View>
-        <Icon name="comment" size={22} />
+        <Icon name="comment" size={22} color="#808080" />
       </View>
     </View>
   );
