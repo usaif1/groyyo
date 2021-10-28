@@ -20,7 +20,7 @@ const UserCardFooter = ({post}) => {
         <Image source={love} style={[styles.icon, styles.leftMargin]} />
         <Image source={celebrate} style={[styles.icon, styles.leftMargin]} />
         <Text style={[styles.comments, styles.leftMargin]}>
-          {post.likes} likes
+          {post.likes.length} likes
         </Text>
       </View>
       <Text style={styles.comments}>200 Comments</Text>

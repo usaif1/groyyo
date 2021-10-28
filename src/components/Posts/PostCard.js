@@ -18,7 +18,7 @@ const PostCard = ({post}) => {
         <Description post={post} />
         <UserCardFooter post={post} />
         <HorizontalBreak height={1} color="#E1E1E1" />
-        <ActionFooter />
+        <ActionFooter post={post} />
       </View>
     </View>
   );
