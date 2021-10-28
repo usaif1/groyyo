@@ -8,7 +8,7 @@ const initialState = {
       id: 0,
       owner: 'Saif',
       description:
-        'This is a my first post. sadjahsdjaadjaskdjasljdashudhnaskdfhasjkdfhjsfhasduihfasd',
+        'quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto',
       title: 'Software Developer, XYZ',
       time: '1h',
       img: user,
@@ -33,7 +33,8 @@ const initialState = {
     {
       id: 1,
       owner: 'Ankit',
-      description: 'This is a my Second post',
+      description:
+        'est rerum tempore vitae\nsequi sint nihil reprehenderit dolor beatae ea dolores neque\nfugiat blanditiis voluptate porro vel nihil molestiae ut reiciendis\nqui aperiam non debitis possimus qui neque nisi nulla',
       title: 'Software Developer, XYZ',
       time: '2h',
       img: user,
@@ -84,7 +85,8 @@ const initialState = {
     {
       id: 3,
       owner: 'Ankit',
-      description: 'This is a my Second post',
+      description:
+        'et iusto sed quo iure\nvoluptatem occaecati omnis eligendi aut ad\nvoluptatem doloribus vel accusantium quis pariatur\nmolestiae porro eius odio et labore et velit aut',
       title: 'Software Developer, XYZ',
       time: '2h',
       img: user,
@@ -110,7 +112,7 @@ const initialState = {
       id: 4,
       owner: 'Saif',
       description:
-        'This is a my first post. sadjahsdjaadjaskdjasljdashudhnaskdfhasjkdfhjsfhasduihfasd',
+        'ullam et saepe reiciendis voluptatem adipisci\nsit amet autem assumenda provident rerum culpa\nquis hic commodi nesciunt rem tenetur doloremque ipsam iurequis sunt voluptatem rerum illo velit',
       title: 'Software Developer, XYZ',
       time: '1h',
       img: user,
@@ -135,7 +137,8 @@ const initialState = {
     {
       id: 5,
       owner: 'Ankit',
-      description: 'This is a my Second post',
+      description:
+        'repudiandae veniam quaerat sunt sed\nalias aut fugiat sit autem sed est\nvoluptatem omnis possimus esse voluptatibus quis\nest aut tenetur dolor neque',
       title: 'Software Developer, XYZ',
       time: '2h',
       img: user,
@@ -160,7 +163,8 @@ const initialState = {
     {
       id: 6,
       owner: 'Ankit',
-      description: 'This is a my Second post',
+      description:
+        'ut aspernatur corporis harum nihil quis provident sequi\nmollitia nobis aliquid molestiae\nperspiciatis et ea nemo ab reprehenderit accusantium quas\nvoluptate dolores velit et doloremque molestiae',
       title: 'Software Developer, XYZ',
       time: '2h',
       img: user,
@@ -186,7 +190,7 @@ const initialState = {
       id: 7,
       owner: 'Saif',
       description:
-        'This is a my first post. sadjahsdjaadjaskdjasljdashudhnaskdfhasjkdfhjsfhasduihfasd',
+        'dolore placeat quibusdam ea quo vitae\nmagni quis enim qui quis quo nemo aut saepe\nquidem repellat excepturi ut quia\nsunt ut sequi eos ea sed quas',
       title: 'Software Developer, XYZ',
       time: '1h',
       img: user,
@@ -211,7 +215,8 @@ const initialState = {
     {
       id: 8,
       owner: 'Ankit',
-      description: 'This is a my Second post',
+      description:
+        'dignissimos aperiam dolorem qui eum\nfacilis quibusdam animi sint suscipit qui sint possimus cum\nquaerat magni maiores excepturi\nipsam ut commodi dolor voluptatum modi aut vitae',
       title: 'Software Developer, XYZ',
       time: '2h',
       img: user,

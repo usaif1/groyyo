@@ -53,9 +53,11 @@ const styles = StyleSheet.create({
     marginTop: 10,
     flexDirection: 'row',
     justifyContent: 'space-around',
+    alignItems: 'center',
   },
   smallText: {
     fontSize: 10,
     marginTop: 3,
+    color: 'black',
   },
 });

@@ -59,5 +59,6 @@ const styles = StyleSheet.create({
   textInput: {
     paddingBottom: 5.5,
     marginLeft: 2,
+    color: '#808080',
   },
 });
