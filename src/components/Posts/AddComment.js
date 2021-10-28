@@ -21,7 +21,7 @@ const AddComment = ({setShow, id}) => {
     <View style={styles.container}>
       <TouchableOpacity
         onPress={() => setShow(false)}
-        style={{position: 'absolute', right: 20, top: 0}}>
+        style={{position: 'absolute', right: 20, top: 5}}>
         <Icon name="times" size={15} color="#FF583A" />
       </TouchableOpacity>
       <Image source={require('../../assets/user.png')} style={styles.img} />
@@ -56,6 +56,8 @@ const styles = StyleSheet.create({
     paddingVertical: 10,
     alignItems: 'center',
     justifyContent: 'space-between',
+    borderTopWidth: 1,
+    borderTopColor: '#E8E8E8',
   },
   img: {
     width: 35,
@@ -63,5 +65,6 @@ const styles = StyleSheet.create({
   },
   input: {
     width: '80%',
+    color: 'black',
   },
 });

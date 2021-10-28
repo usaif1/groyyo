@@ -47,11 +47,14 @@ const styles = StyleSheet.create({
   },
   lgText: {
     fontSize: 16,
+    color: 'black',
   },
   smText: {
     fontSize: 11,
+    color: 'black',
   },
   mdText: {
     fontSize: 14,
+    color: 'black',
   },
 });

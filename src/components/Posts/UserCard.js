@@ -12,7 +12,7 @@ const UserCard = ({post}) => {
           <Text style={styles.smallText}>{post.time}</Text>
         </View>
       </View>
-      <Text style={[styles.follow, styles.largeText, styles.bold]}>
+      <Text style={[styles.largeText, styles.bold, styles.follow]}>
         + Follow
       </Text>
     </View>
@@ -38,11 +38,13 @@ const styles = StyleSheet.create({
   },
   smallText: {
     fontSize: 12,
+    color: 'black',
   },
   largeText: {
     fontSize: 16,
+    color: 'black',
   },
   follow: {
-    color: '#4C83F9',
+    color: '#236CFF',
   },
 });

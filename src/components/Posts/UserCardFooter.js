@@ -35,6 +35,7 @@ export default UserCardFooter;
 const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
+    paddingHorizontal: 3,
   },
   justifyBetween: {
     justifyContent: 'space-between',
