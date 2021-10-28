@@ -30,6 +30,7 @@ const AddComment = ({setShow, id}) => {
         style={styles.input}
         placeholderTextColor="#808080"
         onChangeText={text => setComment(text)}
+        value={comment}
       />
       <TouchableOpacity
         onPress={() => {
@@ -41,7 +42,7 @@ const AddComment = ({setShow, id}) => {
           setComment('');
           setShow(false);
         }}>
-        <Text>Post</Text>
+        <Text style={{color: 'black'}}>Post</Text>
       </TouchableOpacity>
     </View>
   );

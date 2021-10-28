@@ -6,7 +6,7 @@ import Icon from 'react-native-vector-icons/dist/FontAwesome';
 //imports
 import {useApp} from '../../context/AppProvider';
 
-const AddNewHeader = ({post, navigation}) => {
+const AddNewHeader = ({post, navigation, setPost}) => {
   const {addPost} = useApp();
 
   const addNewPost = () => {
@@ -16,6 +16,8 @@ const AddNewHeader = ({post, navigation}) => {
     }
 
     addPost(post);
+    setPost('');
+    navigation.goBack();
   };
 
   return (
@@ -58,5 +60,6 @@ const styles = StyleSheet.create({
   },
   smText: {
     fontSize: 18,
+    color: 'black',
   },
 });

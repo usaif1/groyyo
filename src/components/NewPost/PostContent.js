@@ -9,6 +9,7 @@ const PostContent = ({post, setPost}) => {
         placeholder="What do you want to talk about?"
         placeholderTextColor="#666666"
         onChangeText={text => setPost(text)}
+        value={post}
       />
     </View>
   );
