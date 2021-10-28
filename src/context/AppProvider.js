@@ -11,9 +11,6 @@ export const AppProvider = ({children}) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
 
   const likePost = id => {
-    console.log(id);
-    const post = state.posts.filter(post => post.id === id);
-
     dispatch({
       type: LIKE_POST,
       payload: id,
