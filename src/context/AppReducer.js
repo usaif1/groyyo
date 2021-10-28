@@ -1,5 +1,5 @@
 //imports
-import {ADD_COMMENT, LIKE_POST} from '../actions/types';
+import {ADD_COMMENT, ADD_NEW_POST, LIKE_POST} from '../actions/types';
 
 const AppReducer = (state, action) => {
   switch (action.type) {
@@ -30,6 +30,13 @@ const AppReducer = (state, action) => {
         desc: comment,
         img: user,
       });
+
+      return {
+        ...state,
+      };
+
+    case ADD_NEW_POST:
+      state.posts.push(action.payload);
 
       return {
         ...state,
