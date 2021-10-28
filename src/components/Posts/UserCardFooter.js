@@ -1,12 +1,12 @@
 import React from 'react';
-import {StyleSheet, Text, View, Image} from 'react-native';
+import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 
 //imports
 import like from '../../assets/like.png';
 import love from '../../assets/love.png';
 import celebrate from '../../assets/celebrate.png';
 
-const UserCardFooter = ({post}) => {
+const UserCardFooter = ({post, setComments, comments}) => {
   return (
     <View
       style={[
@@ -23,7 +23,9 @@ const UserCardFooter = ({post}) => {
           {post.likes.length} likes
         </Text>
       </View>
-      <Text style={styles.comments}>{post.comments.length} Comments</Text>
+      <TouchableOpacity onPress={() => setComments(!comments)}>
+        <Text style={styles.comments}>{post.comments.length} Comments</Text>
+      </TouchableOpacity>
     </View>
   );
 };

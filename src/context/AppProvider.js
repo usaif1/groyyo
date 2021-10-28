@@ -5,6 +5,7 @@ import React, {useReducer, useContext} from 'react';
 import initialState from './state';
 import AppContext from './AppContext';
 import AppReducer from './AppReducer';
+import user from '../assets/user.png';
 import {LIKE_POST, ADD_COMMENT} from '../actions/types';
 
 export const AppProvider = ({children}) => {
@@ -22,7 +23,7 @@ export const AppProvider = ({children}) => {
 
     dispatch({
       type: ADD_COMMENT,
-      payload: {comment, id},
+      payload: {comment, id, user},
     });
   };
 

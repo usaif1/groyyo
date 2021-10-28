@@ -17,7 +17,7 @@ const AppReducer = (state, action) => {
       };
 
     case ADD_COMMENT:
-      const {comment, id} = action.payload;
+      const {comment, id, user} = action.payload;
       let element2 = state.posts.findIndex(post => id === post.id);
 
       state.posts[element2].comments.push({
@@ -26,7 +26,9 @@ const AppReducer = (state, action) => {
             state.posts[element2].comments.length - 1
           ].id + 1,
         by: 'Saif',
+        title: 'Software Developer, XYZ',
         desc: comment,
+        img: user,
       });
 
       return {
