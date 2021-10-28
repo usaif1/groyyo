@@ -21,10 +21,7 @@ const AppReducer = (state, action) => {
       let element2 = state.posts.findIndex(post => id === post.id);
 
       state.posts[element2].comments.push({
-        id:
-          state.posts[element2].comments[
-            state.posts[element2].comments.length - 1
-          ].id + 1,
+        id: Math.random(),
         by: 'Saif',
         title: 'Software Developer, XYZ',
         desc: comment,

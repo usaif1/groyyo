@@ -12,9 +12,9 @@ const Post = ({navigation}) => {
 
   return (
     <View style={{flex: 1, backgroundColor: '#FFFFFF'}}>
-      <AddNewHeader post={post} navigation={navigation} />
+      <AddNewHeader post={post} navigation={navigation} setPost={setPost} />
       <UserCard />
-      <PostContent post={post} setPost={setPost} />
+      <PostContent post={post} setPost={setPost} post={post} />
     </View>
   );
 };
