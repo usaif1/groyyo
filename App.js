@@ -1,13 +1,16 @@
+//dependencies
 import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
-
-import {NavigationContainer} from '@react-navigation/native';
-import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import {StatusBar} from 'react-native';
 
 import Navigator from './src/Navigator/Navigator';
 
 const App = () => {
-  return <Navigator />;
+  return (
+    <>
+      <StatusBar backgroundColor="#ffffff" barStyle="dark-content" />
+      <Navigator />
+    </>
+  );
 };
 
 export default App;

@@ -1,3 +1,4 @@
+//dependencies
 import React from 'react';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 import {
@@ -8,6 +9,7 @@ import {
   TextInput,
 } from 'react-native';
 
+//imports
 import user from '../assets/user.png';
 
 const DrawerHeader = ({navigation, route, options}) => {

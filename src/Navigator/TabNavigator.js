@@ -1,7 +1,5 @@
+//dependencies
 import React from 'react';
-import {SafeAreaView, Text, View} from 'react-native';
-
-import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 
 //imports
@@ -11,7 +9,10 @@ const Tab = createBottomTabNavigator();
 
 const TabNavigator = () => {
   return (
-    <Tab.Navigator>
+    <Tab.Navigator
+      screenOptions={{
+        headerShown: false,
+      }}>
       <Tab.Screen name="User" component={Home} />
       <Tab.Screen name="Post" component={Post} />
     </Tab.Navigator>
