@@ -9,7 +9,7 @@ import UserCard from './UserCard';
 import UserCardFooter from './UserCardFooter';
 import ActionFooter from './ActionFooter';
 
-const PostCard = ({post}) => {
+const PostCard = ({post, setShow, show, setId}) => {
   return (
     <View>
       <HorizontalBreak height={5} color="#F3E8E8" />
@@ -18,7 +18,7 @@ const PostCard = ({post}) => {
         <Description post={post} />
         <UserCardFooter post={post} />
         <HorizontalBreak height={1} color="#E1E1E1" />
-        <ActionFooter post={post} />
+        <ActionFooter post={post} setShow={setShow} show={show} setId={setId} />
       </View>
     </View>
   );

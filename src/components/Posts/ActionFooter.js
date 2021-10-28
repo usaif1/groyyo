@@ -6,7 +6,7 @@ import Icon from 'react-native-vector-icons/dist/FontAwesome';
 //imports
 import {useApp} from '../../context/AppProvider';
 
-const ActionFooter = ({post}) => {
+const ActionFooter = ({post, setShow, show, setId}) => {
   const {likePost} = useApp();
 
   return (
@@ -22,7 +22,12 @@ const ActionFooter = ({post}) => {
         />
         <Text style={styles.smallText}>Like</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.alignCenter}>
+      <TouchableOpacity
+        onPress={() => {
+          setShow(!show);
+          setId(post.id);
+        }}
+        style={styles.alignCenter}>
         <Icon name="comment" size={15} color="#646464" fill />
         <Text style={styles.smallText}>Comment</Text>
       </TouchableOpacity>

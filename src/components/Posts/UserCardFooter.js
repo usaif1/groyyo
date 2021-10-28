@@ -23,7 +23,7 @@ const UserCardFooter = ({post}) => {
           {post.likes.length} likes
         </Text>
       </View>
-      <Text style={styles.comments}>200 Comments</Text>
+      <Text style={styles.comments}>{post.comments.length} Comments</Text>
     </View>
   );
 };

@@ -5,7 +5,7 @@ import React, {useReducer, useContext} from 'react';
 import initialState from './state';
 import AppContext from './AppContext';
 import AppReducer from './AppReducer';
-import {LIKE_POST} from '../actions/types';
+import {LIKE_POST, ADD_COMMENT} from '../actions/types';
 
 export const AppProvider = ({children}) => {
   const [state, dispatch] = useReducer(AppReducer, initialState);
@@ -17,8 +17,17 @@ export const AppProvider = ({children}) => {
     });
   };
 
+  const addComment = (comment, id) => {
+    console.log('fired');
+
+    dispatch({
+      type: ADD_COMMENT,
+      payload: {comment, id},
+    });
+  };
+
   return (
-    <AppContext.Provider value={{...state, likePost}}>
+    <AppContext.Provider value={{...state, likePost, addComment}}>
       {children}
     </AppContext.Provider>
   );
